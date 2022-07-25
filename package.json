@@ -1,0 +1,25 @@
+{
+  "name": "auth-with-jwt",
+  "version": "1.0.0",
+  "description": "A simple Node.js api which authenticates using jwt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tamrakar182/node-auth-with-jwt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tamrakar182/node-auth-with-jwt/issues"
+  },
+  "homepage": "https://github.com/Tamrakar182/node-auth-with-jwt#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
