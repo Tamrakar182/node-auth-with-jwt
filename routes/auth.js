@@ -1,14 +1,12 @@
 const router = require('express').Router();
-const { required } = require('@hapi/joi');
 const User = require('../model/User');
-const { registerValidation } = required('../validation');
-
+const {registerValidation} = require('../validation');
 
 
 router.post('/register', async (req, res) => {
 
     //validating data before making user
-    const { error } = registerValidaton(req.body);
+    const { error } = registerValidation(req.body);
     if( error ) return res.status(400).send(error.details[0].message);
 
     //checking if user already exists
@@ -29,7 +27,6 @@ router.post('/register', async (req, res) => {
         res.status(400).send(err);
     }
 });
-
 
 
 module.exports = router;
