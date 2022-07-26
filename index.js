@@ -5,6 +5,7 @@ const app = express();
 
 //import routes
 const authRoute = require('./routes/auth');
+const postRoute = require('./routes/posts');
 
 dotenv.config({
     path:"./config.env"
@@ -21,7 +22,6 @@ app.use(express.json());
   
 //router middlewares
 app.use('/api/user', authRoute);
+app.use('/api/posts', postRoute)
 
 app.listen(3000, () => console.log('Server is Up and Running'));
-
-// maxmillan schwaxmuller       
